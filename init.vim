@@ -5,6 +5,8 @@ let $NVIM=$HOME . "/.config/nvim"
 call plug#begin('~/.config/nvim/plugged')
 Plug 'jnurmine/Zenburn'
 Plug 'benekastah/neomake'
+Plug 'tpope/vim-fugitive'
+Plug 'mhinz/vim-signify'
 Plug '~/devel/elevate.vim'
 call plug#end()
 
@@ -27,12 +29,15 @@ set wildmenu
 set wildmode=list:longest,full
 " turn bells off
 set noerrorbells
-set vb t_vb= " highlight current line
+set vb t_vb= 
+" highlight current line
 set cul 
 set ruler
 set laststatus=2
 " Elimate delays switching out of insert mode and leader
 set timeoutlen=300
+" Causes slowdown in neovim
+set nocursorline
 " disable folding
 set nofoldenable
 

@@ -3,10 +3,11 @@
 noremap <Leader>f :FZF .<CR>
 noremap <C-p> :FZF .<CR>
 noremap <Leader>m :FZFMru<CR>
-noremap <Leader>b :FZFMru<CR>
 noremap <Leader>B :FZF ~/bin<CR>
 noremap <Leader>T :FZF ~/devel/tgit<CR>
 noremap <Leader>D :FZF ~/devel/<CR>
+noremap <Leader>V :FZF ~/.config/nvim/<CR>
+noremap <C-f> :BTags<CR>
 
 command! FZFMru call fzf#run({
 \  'source':  v:oldfiles,

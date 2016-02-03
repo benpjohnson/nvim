@@ -70,13 +70,13 @@ map <Leader>em :e ~/.vim/.mrconfig<CR>
 " edit awesomerc
 map <Leader>ea :exec "e " . $HOME . "/.config/awesome/rc.lua"<CR>
 
-" edit work projects/todos
-map <Leader>ew :exec "e " . $HOME . "/kb2/general/todo.mkd"<CR>
+" edit work in progress
+map <Leader>ew :exec "e " . $NVIM . "/wip.vim"<CR>
 
 " source vimrc and local if it's about
 map <Leader>sr :source $MYVIMRC \| sil! source $NVIM . "/nvim.local"<CR>
 
-" make ',e' (in normal mode) give a prompt for opening files
+" make '<Leader>e' (in normal mode) give a prompt for opening files
 map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
 " Write quickly

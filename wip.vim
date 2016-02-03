@@ -1,5 +1,8 @@
-" FZF
+" fzf
 set rtp+=~/.fzf
+
+" Could this just run bin/???
+map <a-e> :call fzf#run({'source': ['ls'], 'sink' : '!'})<CR>
 
 " FIXME: handle selected range + optional argument (:help a:0) to override type
 " FIXME: my own SQL formatter
@@ -276,7 +279,6 @@ endfunction
 
 
 
-
 " TODOS
 " .mrconfig as ini
 " command to add to mrconfig and download in one go
@@ -341,7 +343,7 @@ endfunction
 command! BTags call s:btags()
 
 " Playing with repeating last TREPLSend
-function s:repel_repeat()
+function! s:repel_repeat()
 
 endfunction
 map <Leader>c :call fzf#run({'source': g:cds, 'sink': 'cd'})<CR>
