@@ -7,7 +7,18 @@ Plug 'jnurmine/Zenburn'
 Plug 'benekastah/neomake'
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
+Plug 'rking/ag.vim'
+Plug 'vimwiki'
+Plug 'kassio/neoterm'
 Plug '~/devel/elevate.vim'
+Plug 'godlygeek/tabular'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-markdown'
+Plug 'juneedahamed/vc.vim'
+Plug 'benpjohnson/dbtables'
+Plug 'benpjohnson/vim-pipe'
+Plug 'mattboehm/vim-unstack'
+Plug 'SirVer/ultisnips'
 call plug#end()
 
 " ---------------------------------- look/feel ---------------------------------
@@ -24,7 +35,7 @@ colorscheme zenburn
 " Give signs a more sensible background colour
 hi SignColumn ctermbg=234
 " turn on auto syntax highlight
-syn on
+syntax on
 set wildmenu
 set wildmode=list:longest,full
 " turn bells off
@@ -76,7 +87,6 @@ if $TMUX == ''
 endif
 
 " --------------------------------- filetypes ----------------------------------
-syntax on
 filetype on
 filetype plugin on
 filetype indent on

@@ -1,0 +1,28 @@
+snippet changelog
+<?xml version="1.0"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+</databaseChangeLog>
+endsnippet
+
+snippet changeset
+    <changeSet id="${1}" author="`whoami`">
+        <sql><![CDATA[
+		${1}
+        ]]></sql>
+        <rollback><![CDATA[
+		${2}
+        ]]></rollback>
+	</changeSet>
+endsnippet
+
+snippet changesetsp
+  <changeSet id="`git symbolic-ref --short HEAD`" author="root" runOnChange="true">
+    <sql endDelimiter=";;"><![CDATA[
+	${2}
+   ]]></sql>
+  </changeSet>
+endsnippet
+
+snippet name
+`git symbolic-ref --short HEAD`-1
+endsnippet

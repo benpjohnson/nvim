@@ -120,3 +120,6 @@ let g:neomake_php_phpcs_args_standard = 'PSR2'
 
 " Signify
 let g:signify_vcs_list = [ 'git', 'svn' ]
+
+" Markdown
+let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'php', 'sql']

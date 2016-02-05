@@ -17,7 +17,7 @@ autocmd BufNewFile,BufRead *.csv,*.tsv setf csv
 autocmd BufNewFile,BufRead *.org setf org
 
 " Markdown
-autocmd BufNewFile,BufRead *.md, *.markdown set ts=1 tw=80
+" autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " Puppet
 autocmd BufNewFile,BufRead *.pp set filetype=ruby
