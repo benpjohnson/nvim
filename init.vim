@@ -19,6 +19,7 @@ Plug 'benpjohnson/dbtables'
 Plug 'benpjohnson/vim-pipe'
 Plug 'mattboehm/vim-unstack'
 Plug 'SirVer/ultisnips'
+Plug 'avakhov/vim-yaml'
 call plug#end()
 
 " ---------------------------------- look/feel ---------------------------------
