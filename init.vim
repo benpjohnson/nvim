@@ -19,6 +19,13 @@ Plug 'benpjohnson/dbtables'
 Plug 'benpjohnson/vim-pipe'
 Plug 'mattboehm/vim-unstack'
 Plug 'SirVer/ultisnips'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'tobys/pdv'
+Plug 'tobys/vmustache'
+Plug 'janko-m/vim-test'
+
+"Plug 'git.benj.at:debugbydie.git'
 call plug#end()
 
 " ---------------------------------- look/feel ---------------------------------

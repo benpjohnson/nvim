@@ -5,7 +5,7 @@ snippet changelog
 endsnippet
 
 snippet changeset
-    <changeSet id="${1}" author="`whoami`">
+    <changeSet id="`!v BaseBranch() . "-1"`" author="`whoami`">
         <sql><![CDATA[
 		${1}
         ]]></sql>

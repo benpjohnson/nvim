@@ -81,7 +81,7 @@ hi CSVColumnHeaderOdd ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f
 
 map <Leader>c :TREPLSend<CR>
 let g:neoterm_size = 20
-" FIXME: toggle
+" FIXME: toggle and add cclose
 map <A-c> :Tclose<CR>
 map <A-o> :Topen<CR>
 map <Space><Space> :TREPLSend<CR>

@@ -24,5 +24,8 @@ function! TextEnableCodeSnip(filetype,start,end,textSnipHl) abort
   \ contains=@'.group
 endfunction
 
+" FIXME: should be in a liquibase filetype as we are abusing XML :(
 autocmd BufNewFile,BufRead,BufReadPost * call TextEnableCodeSnip('sql',   '<sql',   '</sql', 'SpecialComment')
 autocmd BufNewFile,BufRead,BufReadPost * call TextEnableCodeSnip('sql',   '<rollback',   '</rollback', 'SpecialComment')
+
+" autocmd FileType xml setlocal commentstring='-- %s'
